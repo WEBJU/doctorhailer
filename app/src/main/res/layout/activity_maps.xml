@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <android.support.v7.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        style="@style/HeaderBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:elevation="4dp" />-->
+
+    <fragment
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:elevation="4dp"-->
+<!--        android:background="@drawable/bg_edt"-->
+<!--        android:hint="Search Doctors.."-->
+<!--        android:textColorHint="@color/errordialogbgcolor"-->
+<!--        android:layout_height="40dp"/>-->
+    <SearchView
+        android:layout_width="match_parent"
+        android:iconifiedByDefault="false"
+        android:id="@+id/searchDoctors"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:queryHint="Search Locations"
+        android:background="@drawable/bg_edt"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
